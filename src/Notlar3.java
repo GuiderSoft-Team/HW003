@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Notlar {
+public class Notlar3 {
     public static void main(String[] args) {
         // Klavyeden girilen vize ve final notlarının ortalamasını ve harf notunu bulan bir program yazınız.
         /*

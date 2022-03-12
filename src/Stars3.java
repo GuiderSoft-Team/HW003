@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Stars {
+public class Stars3 {
     public static void main(String[] args) {
         // Klavyeden girilen sayı kadar yıldızı ekrana tablo halinde yazan bir program yazınız.
         /*
