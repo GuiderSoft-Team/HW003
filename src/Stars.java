@@ -11,9 +11,8 @@ public class Stars {
 
                 for (int i = 1; i < mode + 1; i++) {
                     System.out.print("*\t");
-                    if (i % sutun == 0) {
+                    if (i % sutun == 0)
                         System.out.print("\n");
-                    }
                 }
 
             }
