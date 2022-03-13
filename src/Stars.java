@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class Stars {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
-
         System.out.print("Yıldız adedi giriniz: ");
         double adet=input.nextInt();
         System.out.print("Sütun adedi giriniz: ");
