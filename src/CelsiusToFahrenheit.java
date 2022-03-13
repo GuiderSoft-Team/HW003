@@ -1,25 +1,27 @@
+import java.util.Scanner;
 public class CelsiusToFahrenheit {
     public static void main(String[] args) {
-        //TODO: Klavyeden girilen Sıcaklık değerleri, diğer birime dönüştürülecektir.
-        /*
-            Örnek Menü Tasarımı:
+        Scanner input=new Scanner(System.in);
+        System.out.println("1.Celsius - Fahrenheit");
+        System.out.println("2.Fahrenheit - Celsius");
 
-            Sıcaklık Dönüşüm Uygulaması
-            1. Santigrat - Fahrenheit
-            2. Fahrenheit - Santigrat
-            Seçim :
-            -------------------------
-            Formül: F=Cx1.8+32
-                    C=(F-32)/1.8
-             -----------------------
-            Örnek;  F=30x1.8+32=86
-                    C=(86-32)/1.8=30
-            -------------------------
-             Ekran Çıktısı:
-             30 C --> 86 F
-             86 F --> 30 C
-         */
+        System.out.println("Choice : ");
+        int choice= input.nextInt();
 
+        double c,f;
+        System.out.println("Enter the temprature value : ");
+        double tempraturevalue= input.nextFloat();
 
+        switch (choice){
+            case 1:
+                f=tempraturevalue*1.8+32;
+                System.out.println(tempraturevalue+ "C"+"---->"+f+"F");
+            break;
+            case 2:
+                c = (tempraturevalue-32)/1.8;
+                System.out.println(tempraturevalue+"F"+"---->"+c+"C");
+            default:
+                System.out.println("Entered a false value");
+        }
     }
 }
