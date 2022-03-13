@@ -1,25 +1,31 @@
+import java.util.Scanner;
+
 public class CelsiusToFahrenheit {
     public static void main(String[] args) {
-        //TODO: Klavyeden girilen Sıcaklık değerleri, diğer birime dönüştürülecektir.
-        /*
-            Örnek Menü Tasarımı:
+        System.out.print("""
+                Sıcaklık Dönüştürücü
+                1.Santigrad - Fahrenheit
+                2.Fahrenheit - Santigrad
+                """);
+        Scanner input=new Scanner(System.in);
+        System.out.print("Dönüştürücü seçiniz[1-2]: ");
+        int secim=input.nextInt();
+        int sicaklik;
 
-            Sıcaklık Dönüşüm Uygulaması
-            1. Santigrat - Fahrenheit
-            2. Fahrenheit - Santigrat
-            Seçim :
-            -------------------------
-            Formül: F=Cx1.8+32
-                    C=(F-32)/1.8
-             -----------------------
-            Örnek;  F=30x1.8+32=86
-                    C=(86-32)/1.8=30
-            -------------------------
-             Ekran Çıktısı:
-             30 C --> 86 F
-             86 F --> 30 C
-         */
-
-
+        switch (secim) {
+            case 1:
+                System.out.print("Sıcaklık değerini giriniz[°C]: ");
+                sicaklik=input.nextInt();
+                double sicaklikF=(sicaklik*18/10)+32;
+                System.out.println(sicaklik+"°C"+" --> "+sicaklikF+"°F");
+                break;
+            case 2:
+                System.out.print("Sıcaklık değerini giriniz[°F]: ");
+                sicaklik=input.nextInt();
+                double sicaklikC=(sicaklik-32)/(1.8);
+                /*                System.out.println(sicaklik+"°F"+" --> "+sicaklikC+"°C");*/
+                System.out.print(sicaklik+"°F"+" --> ");System.out.print(Math.round(sicaklikC));System.out.print("°C");
+                break;
+        }
     }
 }
