@@ -1,24 +1,19 @@
 import java.util.Scanner;
-
 public class Stars {
     public static void main(String[] args) {
-        //TODO: Klavyeden girilen sayı kadar yıldızı ekrana tablo halinde yazan bir program yazınız.
-        /*
-            Ekran:
-            Yıldız Adedi:
-            Sütun Adedi :
+        Scanner input = new Scanner(System.in);
+        System.out.println("Number of Stars : ");
+        int star = input.nextInt();
+        System.out.println("Number of Columns : ");
+        int columns = input.nextInt();
 
-
-            Örnek;
-            Yıldız Adedi: 54
-            Sütun Adedi : 12
-            *	*	*	*	*	*	*	*	*	*	*	*
-            *	*	*	*	*	*	*	*	*	*	*	*
-            *	*	*	*	*	*	*	*	*	*	*	*
-            *	*	*	*	*	*	*	*	*	*	*	*
-            *	*	*	*	*	*
-         */
-
-
+        for (int a = 1; a < star; a++) {
+            System.out.print("*");
+            if (a %  columns <= 0){
+                System.out.print("\n");
+            }
+        }
+        }
     }
-}
+
+
