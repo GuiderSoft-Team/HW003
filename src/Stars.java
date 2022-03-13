@@ -18,7 +18,5 @@ public class Stars {
         for (double k = 0; k+1 <= kalan; k++) {
             System.out.print("  *\t");
         }
-/*      :DDDD           */
-
     }
 }

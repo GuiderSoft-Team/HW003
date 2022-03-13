@@ -23,7 +23,7 @@ public class CelsiusToFahrenheit {
                 System.out.print("Sıcaklık değerini giriniz[°F]: ");
                 sicaklik=input.nextInt();
                 double sicaklikC=(sicaklik-32)/(1.8);
-                /*                System.out.println(sicaklik+"°F"+" --> "+sicaklikC+"°C");*/
+                /* System.out.println(sicaklik+"°F"+" --> "+sicaklikC+"°C");*/
                 System.out.print(sicaklik+"°F"+" --> ");System.out.print(Math.round(sicaklikC));System.out.print("°C");
                 break;
         }
