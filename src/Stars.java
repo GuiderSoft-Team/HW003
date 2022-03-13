@@ -19,6 +19,19 @@ public class Stars {
             *	*	*	*	*	*
          */
 
+Scanner input=new Scanner(System.in);
+        System.out.print("lütfen yıldız adedini giriniz=");
+        int YildizAdedi=input.nextInt();
+        System.out.print("lütfen sütun adedini giriniz=");
+        int SutunAdedi=input.nextInt();
+
+        for (int i = 1; i <= YildizAdedi; i++) {
+            System.out.print("*\t");
+            if (i % SutunAdedi == 0) {
+                System.out.print("\n");
+            }
+
+        }
 
     }
 }
