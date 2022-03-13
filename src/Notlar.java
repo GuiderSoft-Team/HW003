@@ -1,23 +1,18 @@
-public class Notlar {
+import java.util.Scanner;
+  public class Notlar {
     public static void main(String[] args) {
-        //TODO: Klavyeden girilen vize ve final notlarının ortalamasını ve harf notunu bulan bir program yazınız.
-        /*
-            Vize Notu :
-            Final Notu :
+        Scanner input = new Scanner(System.in);
 
-            Formül: not=Vize Notu x 0.4 + Final Notu x 0.6
-            Harfler:
-                A 90-100
-                B 80-89
-                C 70-79
-                D 60-69
-                F 0-59
+        System.out.println("Bitte geben Sie Ihren Klausur Note ein :");
+        int klausurNote= input.nextInt();
 
-            Örnek Ekran Çıktısı:
+        System.out.println("Bitte geben Sie Ihren Abschlussprüfung ein :");
+        int abschlussprüfung = input.nextInt();
 
-            Not : 80 [B]
+        double punkt = klausurNote * 0.4 + abschlussprüfung * 0.6;
 
-         */
 
+        String punktBuchstabe = punkt < 60? "[F]": punkt < 70? "[D]": punkt < 80? "[C]": punkt < 90? "[B]": punkt <= 100? "[A]": "Ungültige Punktzahl";
+        System.out.println("punkt : "+punkt+" "+punktBuchstabe);
     }
 }
