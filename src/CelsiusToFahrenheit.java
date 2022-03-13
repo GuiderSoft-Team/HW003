@@ -11,7 +11,6 @@ public class CelsiusToFahrenheit {
         System.out.print("Dönüştürücü seçiniz[1-2]: ");
         int secim=input.nextInt();
         int sicaklik;
-
         switch (secim) {
             case 1:
                 System.out.print("Sıcaklık değerini giriniz[°C]: ");
