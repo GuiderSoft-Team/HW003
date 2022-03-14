@@ -18,7 +18,33 @@ public class Stars {
             *	*	*	*	*	*	*	*	*	*	*	*
             *	*	*	*	*	*
          */
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Ne kadar yıldızın olsun: ");
+        int star = input.nextInt();
+        System.out.print("Kaç Sütun gözüksün: ");
+        int stn = input.nextInt();
 
 
+        for (int i = 0; i < star; i++) {
+            System.out.print("*" + "\t");
+            for (int j = 0; j <stn ; j++) {
+            }
+
+            }
+        System.out.println("yapamadım");
+
+        }
     }
-}
+
+
+
+
+
+
+
+
+
+
+
+
