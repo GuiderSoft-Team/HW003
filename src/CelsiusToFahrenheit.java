@@ -1,6 +1,8 @@
+
+import java.util.Scanner;
 public class CelsiusToFahrenheit {
     public static void main(String[] args) {
-        //TODO: Klavyeden girilen Sıcaklık değerleri, diğer birime dönüştürülecektir.
+        // Klavyeden girilen Sıcaklık değerleri, diğer birime dönüştürülecektir.
         /*
             Örnek Menü Tasarımı:
 
