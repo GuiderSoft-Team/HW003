@@ -18,7 +18,27 @@ public class Stars {
             *	*	*	*	*	*	*	*	*	*	*	*
             *	*	*	*	*	*
          */
+        Scanner input=new Scanner(System.in);
 
+        System.out.println("Yıldız Tablosu");
+        System.out.println("*---------------*");
+        System.out.println("Sayıları Giriniz:");
+        System.out.println("v-------v");
+
+        int yildizAdedi,sutunAdedi;
+
+        System.out.print("Yıldız Adedi:");
+        yildizAdedi=input.nextInt();
+        System.out.print("Sütun Adedi:");
+        sutunAdedi=input.nextInt();
+
+        for (int i = 1; i <=sutunAdedi; i++) {
+            for (int j = 1; j <=yildizAdedi; j++) {
+                System.out.print("*"+"\t");
+                }
+            }
+            System.out.println();
+        }
 
     }
-}
+
