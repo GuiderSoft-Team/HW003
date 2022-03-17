@@ -21,7 +21,30 @@ public class CelsiusToFahrenheit {
              30 C --> 86 F
              86 F --> 30 C
          */
+        Scanner input = new Scanner(System.in);
+        System.out.println("Sıcaklık Dönüşüm Uygulaması");
+        System.out.println("1. Celcius - Fahrenheit");
+        System.out.println("2. Fahrenheit - Celcius");
+        System.out.println("seç : ");
 
 
+        int sec =  input.nextInt();
+
+        double c,f;
+        System.out.print("Sıcaklığı giriniz :");
+        double Temperature = input.nextDouble();
+
+        switch (sec) {
+            case 1:
+                f = Temperature*1.8+32;
+                System.out.println(Temperature +"C"+" -------> "+f+" F");
+                break;
+            case 2 :
+                c = (Temperature-32)/1.8;
+                System.out.println(Temperature+ "F"+" -------> "+c+" C");
+            default :
+                System.out.println("Yanlış bir değer ");
+                break;
+        }
     }
 }
