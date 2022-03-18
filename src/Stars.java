@@ -2,21 +2,6 @@ import java.util.Scanner;
 
 public class Stars {
     public static void main(String[] args) {
-        /*
-            Ekran:
-            Yıldız Adedi:
-            Sütun Adedi :
-
-
-            Örnek;
-            Yıldız Adedi: 54
-            Sütun Adedi : 12
-            *	*	*	*	*	*	*	*	*	*	*	*
-            *	*	*	*	*	*	*	*	*	*	*	*
-            *	*	*	*	*	*	*	*	*	*	*	*
-            *	*	*	*	*	*	*	*	*	*	*	*
-            *	*	*	*	*	*
-         */
         System.out.println("Lütfen ekrana yazdırmak istediğiniz yıldız sütunları bilgilerini giriniz.");
         Scanner input1=new Scanner(System.in);
         System.out.print("Yıldız adedi: ");
