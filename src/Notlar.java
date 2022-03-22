@@ -1,23 +1,27 @@
+import java.util.Scanner;
+
 public class Notlar {
     public static void main(String[] args) {
-        //TODO: Klavyeden girilen vize ve final notlarının ortalamasını ve harf notunu bulan bir program yazınız.
-        /*
-            Vize Notu :
-            Final Notu :
+        // Klavyeden girilen vize ve final notlarının ortalamasını ve harf notunu bulan bir program yazınız.
+        Scanner input=new Scanner(System.in);
+        System.out.print("Vize Notu  = ");
+        int vizeNotu=input.nextInt();
+        System.out.print("Final Notu = ");
+        int finalNotu=input.nextInt();
+        if(vizeNotu<0|finalNotu<0){
+            System.err.println("Girilen Not Eksi Olamaz");
+            System.out.println("Lütfen Tekrar Giriniz");
+            System.exit(-1);
+        }
 
-            Formül: not=Vize Notu x 0.4 + Final Notu x 0.6
-            Harfler:
-                A 90-100
-                B 80-89
-                C 70-79
-                D 60-69
-                F 0-59
+        double ortalama=(vizeNotu*0.4)+(finalNotu*0.6);
+        String notOrtHarf= ortalama < 60 ? ortalama + " [" + "F" + "]" : ortalama < 70 ? ortalama + " [" + "D" + "]" : ortalama < 80 ? ortalama + " [" + "C" + "]" : ortalama < 90 ? ortalama + " [" + "B" + "]" : ortalama <= 100 ? ortalama + " [" + "A" + "]" : "geçersiz bir ortalama girildi";
+        System.out.println("Öğrencinin Not Ortalaması: "+notOrtHarf);
 
-            Örnek Ekran Çıktısı:
 
-            Not : 80 [B]
 
-         */
 
-    }
+
+            }
 }
+
