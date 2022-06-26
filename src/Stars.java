@@ -19,6 +19,23 @@ public class Stars {
             *	*	*	*	*	*
          */
 
+        Scanner input = new Scanner(System.in);
+        System.out.println("Yildiz Adedi:");
+        int yildiz = input.nextInt();
 
+        System.out.println("Sütun Adedi:");
+        int sütun = input.nextInt();
+
+        while (yildiz > 0) {
+            String s = " ";
+            for (int i = 0; i < yildiz; i++) {
+                if (yildiz > 0) {
+                    s = s + "*";
+                }
+                yildiz = yildiz - 1;
+            }
+            System.out.print(s);
+
+        }
     }
 }
