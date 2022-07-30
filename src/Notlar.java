@@ -49,7 +49,7 @@ public class Notlar {
 
     }
 }
-            /*String notHarf=not<60?"FF":not<70?"DD":not<80?"CC":not<90?"BB":not<=100?"AA":"GEÇERSİZ";
-            System.out.println(not+"--> "+notHarf);*/
+
+
 
 
